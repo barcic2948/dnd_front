@@ -1,0 +1,16 @@
+:root {
+    --app-orange-color: #ff6200;
+    --app-white-color: #ffffff;
+    --app-8percent-color: #f0f0f0;
+    --app-15percent-color: #d9d9d9;
+    --app-light-gray-color: #767676;
+    --app-black-color: #333333;
+    --app-minus-color: #ff0000;
+    --app-leaf-color: #349651;
+    --app-lime-color: #d0d93c;
+    --app-sky-color: #60a6da;
+
+    --app-primary-color: var(var(--app-orange-color));
+    --border-radious: 4px;
+    --border-radious-button: 8px;
+}

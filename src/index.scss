@@ -1,0 +1,24 @@
+@import './styles/breakpoints.scss';
+@import './styles/cssVariables.scss';
+@import './styles/globalStyyles.scss';
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto');
+    src: local('Roboto-Regular');
+    src: url(./fonts/Roboto-Regular.ttf), format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold');
+    src: local('Roboto-Bold');
+    src: url(./fonts/Roboto-Bold.ttf), format('trueType');
+    font-style: normal;
+}
+
+body {
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
