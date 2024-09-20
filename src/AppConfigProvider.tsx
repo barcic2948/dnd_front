@@ -32,15 +32,15 @@ export default function AppConfigProvider({ children }: AppConfigProviderProps):
 
     const { appLanguage } = useSelector((state: RootState) => state.appLanguage);
 
-    //const changeLanguage = async () => {
-    //    await i18next.changeLanguage(appLanguage);
-    //};
+    const changeLanguage = async () => {
+        await i18next.changeLanguage(appLanguage);
+    };
 
     dayjs.extend(relativeTime);
     dayjs.locale(appLanguage);
 
     useEffect(() => {
-        //changeLanguage();
+        changeLanguage();
         //dispatch(setShouldRefreshTable(true));
         // esling-disable-next-line react-hooks/exhaustive-deps
     }, [appLanguage]);

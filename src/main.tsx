@@ -6,15 +6,15 @@ import { BrowserRouter } from 'react-router-dom';
 import AppConfigProvider from './AppConfigProvider.tsx';
 import { Provider } from 'react-redux';
 import Auth from './pages/auth/Auth.tsx';
+import './i18n/i18n.ts';
+import './index.scss';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <Provider store={store}>
             <BrowserRouter>
                 <AppConfigProvider>
-                    <Auth>
-                        <App />
-                    </Auth>
+                    <App />
                 </AppConfigProvider>
             </BrowserRouter>
         </Provider>

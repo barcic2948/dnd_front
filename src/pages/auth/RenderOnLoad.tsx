@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store';
+import ErrorPage from '../error/ErrorPage';
 
 interface RenderOnRoleProps {
     role: string;
@@ -15,5 +16,5 @@ export default function RenderOnRole({ role, displayMessage, children }: RenderO
         return children;
     }
 
-    return displayMessage ? null : null;
+    return displayMessage ? <ErrorPage errorCode={'403'} /> : null;
 }
